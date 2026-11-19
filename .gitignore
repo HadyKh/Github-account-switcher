@@ -1,0 +1,19 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# PyInstaller build artifacts
+build/
+dist/
+*.spec
+*.exe
+
+# Local runtime data & encrypted account store (keep local secrets out of Git)
+data/
+
+# IDE & OS files
+.vscode/
+.idea/
+Thumbs.db
+.DS_Store
