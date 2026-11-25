@@ -1,6 +1,20 @@
-# GitHub Account Switcher (Desktop GUI + CLI)
+<p align="center">
+  <img src="assets/app_icon.ico" alt="GitHub Account Switcher Icon" width="96" height="96">
+</p>
 
-A lightweight, zero-dependency Windows Desktop application to manage and switch between multiple GitHub accounts seamlessly across your entire machine.
+<h1 align="center">GitHub Account Switcher (Desktop GUI + CLI)</h1>
+
+<p align="center">
+  A lightweight, zero-dependency Windows Desktop application to manage and switch between multiple GitHub accounts seamlessly across your entire machine.
+</p>
+
+<p align="center">
+  <img src="assets/Screenshot.png" alt="GitHub Account Switcher Screenshot" width="880">
+</p>
+
+---
+
+## ✨ Features
 
 When you select an account and click **⚡ Switch to This Account**, every **commit**, **clone**, **pull**, and **push** across all terminals, IDEs, and VS Code will use that account automatically:
 
@@ -22,7 +36,7 @@ When you select an account and click **⚡ Switch to This Account**, every **com
 
 ---
 
-## How to Launch
+## 🚀 How to Launch
 
 ### Option 1: Double-click the Desktop Launcher
 Double-click [`run_switcher.bat`](file:///D:/Scripts/Github-account-switcher/run_switcher.bat) in Windows Explorer. It launches the GUI cleanly in the background using `pythonw` (no command prompt window behind it).
@@ -33,7 +47,7 @@ python main.py
 ```
 
 ### Option 3: Build Standalone `.exe`
-Run [`build_exe.bat`](file:///D:/Scripts/Github-account-switcher/build_exe.bat) to package the application into a standalone `GitHubAccountSwitcher.exe` using PyInstaller.
+Run [`build_exe.bat`](file:///D:/Scripts/Github-account-switcher/build_exe.bat) to package the application into a standalone `GitHubAccountSwitcher.exe` (with the custom icon embedded) using PyInstaller.
 
 ### Option 4: Quick Command-Line Switching (Optional)
 You can also inspect status or switch accounts directly from PowerShell or CMD:
@@ -50,11 +64,13 @@ python main.py --switch "Work"
 
 ---
 
-## Project Structure
+## 📂 Project Structure
 
 - [`main.py`](file:///D:/Scripts/Github-account-switcher/main.py) — Entry point (High-DPI Desktop GUI + CLI flags)
 - [`run_switcher.bat`](file:///D:/Scripts/Github-account-switcher/run_switcher.bat) — One-click Windows launcher
 - [`build_exe.bat`](file:///D:/Scripts/Github-account-switcher/build_exe.bat) — Standalone `.exe` build script
+- [`assets/app_icon.ico`](file:///D:/Scripts/Github-account-switcher/assets/app_icon.ico) — Multi-resolution application icon
+- [`assets/Screenshot.png`](file:///D:/Scripts/Github-account-switcher/assets/Screenshot.png) — Application UI preview
 - [`core/security.py`](file:///D:/Scripts/Github-account-switcher/core/security.py) — Windows DPAPI (`Crypt32.dll`) token encryption & decryption
 - [`core/models.py`](file:///D:/Scripts/Github-account-switcher/core/models.py) — `AccountProfile` and `ProfileStore` (`data/accounts.json`)
 - [`core/switcher.py`](file:///D:/Scripts/Github-account-switcher/core/switcher.py) — Git config, Git Credential Manager, `~/.ssh/config`, `ssh-keygen`, and GitHub verification engine
