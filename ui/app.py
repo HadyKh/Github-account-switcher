@@ -51,7 +51,7 @@ class GitHubSwitcherApp(tk.Tk):
         self.configure(bg=BG_MAIN)
 
         try:
-            ctypes.windll.shell32.SetCurrentProcessExplicitAppUserModelID("HadyKh.GitHubAccountSwitcher.1.0")
+            ctypes.windll.shell32.SetCurrentProcessExplicitAppUserModelID("GitHubAccountSwitcher.Desktop.1.0")
         except Exception:
             pass
 

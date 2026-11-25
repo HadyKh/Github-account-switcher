@@ -17,10 +17,10 @@ from core.security import decrypt_secret, encrypt_secret
 @dataclass
 class AccountProfile:
     id: str
-    label: str                  # e.g., "Work (Velents)", "Personal"
+    label: str                  # e.g., "Work", "Personal"
     git_name: str               # git config user.name
     git_email: str              # git config user.email
-    github_username: str        # GitHub login handle (e.g., "hadykhaled")
+    github_username: str        # GitHub login handle (e.g., "octocat")
     auth_mode: str = "both"     # "https", "ssh", or "both"
     https_token: str = ""       # In-memory decrypted GitHub PAT
     ssh_key_path: str = ""      # Path to private SSH key (e.g., C:/Users/.../.ssh/id_ed25519_work)
